@@ -2,10 +2,11 @@
 Today I Learned
 <br>
 
-Now I'm taking education ( intelligent service systems based on Big Data! )
+Now I'm taking education <Intelligent Service Systems based on Big Data!>
 <br>
-Here, I'm posting what I learned during instruction.
+I'm posting here what I learned during instruction.
 
-#### Rrevious Commit ✍️
+#### Previous Commit ✍️
 - Using weather Open API read in XML/JSON
 - Crawling Music Chart → Visualization
+- Using ChromeDriver
