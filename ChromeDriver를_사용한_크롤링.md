@@ -8,7 +8,6 @@ from selenium import webdriver
 
 - 앞서 배운 requests를 사용해서 페이지를 크롤링 할 수 없을 때 사용
 - webdriver 라는 API를 통해 운영체제에 설치된 크롬 등의 브라우저를 제어.
-
 - 모듈 설치와 크롬 브라우저 설치가 필요하다.
 
 
@@ -22,7 +21,7 @@ driver.get(url)
 
 `driver.get(url)` 을 진행하면, 기존 크롬과 다른 창이 뜨게 된다.
 
-![image-20220327111034319](C:\Users\sujin\AppData\Roaming\Typora\typora-user-images\image-20220327111034319.png)
+<img src='![image-20220327111034319](C:\Users\sujin\AppData\Roaming\Typora\typora-user-images\image-20220327111034319.png)' />
 
 ### 웹 브라우저(HTML) 가져오기
 
@@ -36,7 +35,6 @@ soup
 ### 원하는 태그 찾기
 
 requests 후 BeautifulSoup을 통해 가져온 soup은 find와 find_all로 쉽게 찾을 수 있었다.
-
 이제 크롬 드라이버를 사용한 가져오기를 실행해 보자.  
 
 ```py
@@ -76,7 +74,7 @@ print(herf)
 
 ### 브라우저를 이용해 페이지 제어
 
-```py
+```python
 driver.get('https://google.com')
 elem = driver.find_element_by_name('q')
 
@@ -86,11 +84,11 @@ elem.send_keys('광교 맛집')
 
 구글의 검색창에 위와 같이 검색어를 입력하면 아래 처럼 자동으로 입력되어 있는 것을 볼 수 있다.
 
-![image-20220327114112888](C:\Users\sujin\AppData\Roaming\Typora\typora-user-images\image-20220327114112888.png)
+<img src='![image-20220327114112888](C:\Users\sujin\AppData\Roaming\Typora\typora-user-images\image-20220327114112888.png)' />
 
 - xpath 를 통해 검색 버튼을 클릭하여 검색 결과를 확인할 수 있다.
 
-```py
+```python
 driver.find_element_by_xpath('/html/body/div[1]/div[3]/form/div[1]/div[1]/div[2]/div[2]/div[5]/center/input[1]').click()
 ```
 
