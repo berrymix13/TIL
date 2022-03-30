@@ -88,3 +88,7 @@ for i in range(1, 101,100):
 df_navkin
 ```
 
+```python
+df_navkin.to_csv('c:/pydata/'+encText+'_지식인.csv')
+```
+
